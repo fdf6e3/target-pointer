@@ -54,9 +54,9 @@ document.addEventListener('mousemove', e => {
 const target = document.querySelector('.target');
 
 addEventListener('load', e => {
-	const targetRect = target.getBoundingClientRect();
-	const targetHalfWidth = targetRect.width / 2;
-	const targetHalfHeight = targetRect.height / 2;
+  const targetRect = target.getBoundingClientRect();
+  const targetHalfWidth = targetRect.width / 2;
+  const targetHalfHeight = targetRect.height / 2;
 
   document.addEventListener('mousemove', e => {
     const x = e.clientX;
@@ -65,6 +65,6 @@ addEventListener('load', e => {
     target.style.transform = `translate(${x - targetHalfWidth}px, ${y -
       targetHalfHeight}px)`;
     ...
-	});
+  });
 });
 ```
